@@ -24,8 +24,8 @@
       environment:
         REDIS_OM_URL: redis://redis:6379
       depends_on:
-        redis:
-          condition: service_healthy
+        - redis
+    
 
   volumes:
       db-data:
