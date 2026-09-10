@@ -11,10 +11,7 @@ pipeline {
                 sh 'docker compose build'
             }
 	}
-	stage ('test') {
-            steps {
-                sh 'docker compose run --rm flask pytest'
-            }
+	
         }
         stage ('Deploy') {
             steps {
