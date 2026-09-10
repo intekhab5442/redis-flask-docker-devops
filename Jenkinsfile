@@ -9,9 +9,7 @@ pipeline {
         stage ('build') {
             steps {
                 sh 'docker compose build'
-            }
-	}
-	
+            }	
         }
         stage ('Deploy') {
             steps {
